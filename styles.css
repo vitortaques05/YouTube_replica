@@ -1,0 +1,149 @@
+/*header {
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
+
+/*três riscos paralelos*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.menu-button {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.search-bar {
+    flex: 1;
+    margin: 0 20px;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 16px;
+    border: 1px solid #000;
+    width: 275px;
+}
+
+.search-button {
+    background-color: #fff;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.round-button {
+    background-color: #f2f2f2;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.notification-button {
+    background-color: #fff;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.account-button {
+    background-color: #fff;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.logo {
+
+    border: none;
+    width: 80px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+
+.sidebar {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    width: 75px;
+    padding: 20px 10px;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    bottom: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar i {
+    font-size: 22px;
+    color: #000;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #000;
+}
+
+.thumbnail-container {
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.thumbnail {
+    text-align: center;
+    margin: 10px;
+    border-radius: 5px;
+    width: calc(25% - 20px);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.thumbnail h3,
+.thumbnail p {
+    margin: 0;
+}
+
+.thumbnail img {
+    margin: 0;
+    width: 300px;
+    height: 220px;
+    padding: 0;
+    border-radius: 10px;
+}

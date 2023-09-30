@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" type="image/svg"
+        href="https://upload.wikimedia.org/wikipedia/commons/8/8d/Logo_YouTube_por_Hernando_%282005-2011%29.svg">
+
+
+
+    <title>Youtuberson</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div>
+                <button class="menu-button">&#8801;</button>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Logo_YouTube_por_Hernando_%282005-2011%29.svg"
+                    alt="a" class="logo">
+            </div>
+            <div>
+
+                <input type="text" class="search-bar" placeholder="Pesquisar...">
+                <button class="search-button"><i class="fas fa-search"></i></button>
+
+                <button class="round-button"><i class="fas fa-microphone"></i></button>
+            </div>
+            <div>
+                <button class="notification-button"><i class="fas fa-bell"></i></button>
+                <button class="account-button"><i class="fas fa-user-circle"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <ul style="list-style-type: none;">
+            <li><a href="#"><i class="fas fa-home"></i> <span>Início</span></a></li>
+            <li><a href="#"><i class="fas fa-video"></i> <span>Shorts</span></a></li>
+            <li><a href="#"><i class="fas fa-clone"></i> <span>Subs</span></a></li>
+
+        </ul>
+    </div>
+
+
+    <!-- Container de thumbnails e títulos -->
+    <br>
+    <br>
+    <br>
+
+
+    <div class="thumbnail-container">
+
+
+        <div class="thumbnail">
+            <img src="https://img.ifunny.co/images/1d9e6f850d52438f9d3d59b9dd498ddcc35cf0835c6c1b3bcdd12aec536f76b2_1.jpg"
+                alt="Esse cara é doido">
+            <h3>KKKKKKKKKK</h3>
+            <p>Andre young - 96 mil visualizações - há 1 mês</p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://pbs.twimg.com/media/FxtKpC9X0AEh8UW.png" alt="andre">
+            <h3>MT EU</h3>
+            <p>Andre young - 112 mil visualizações - há 2 meses</p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://i.ytimg.com/vi/VUr85qHsbiQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDSgU5Kh1CKRb93P78Nu2W-duTFiQ"
+                alt="ok">
+            <h3>Aula </h3>
+            <p>sla - 12 visualizações - há 5 meses</p>
+        </div>
+
+
+        <div class="thumbnail">
+            <img src="data:image/jpeg;base64,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"
+                alt="aaaaa">
+            <h3>Como não coringar com java </h3>
+            <p>indiano do grau - 3 mil visualizações - há 1 ano</p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://i.ytimg.com/vi/kvs1Ib4aniU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBAacFPE9oS_jlYdW1MTJGKs0X1Zw"
+                alt="nilce">
+            <h3>pl4c3nt4 da minha esposa (gorfei?)</h3>
+            <p>Coisa de Nerd - 2,3 mi visualizações - há 1 hora</p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://s2.glbimg.com/QSR5mLcD-iBTQcKbhVHPxv82mEw=/e.glbimg.com/og/ed/f/original/2021/10/25/submarino_03_divulgacao_manual_do_mundo.jpg"
+                alt="ibere">
+            <h3>Como roubar um submarino estatal</h3>
+            <p>Manual do Mundo - 6,4 mi visualizações - há 10 horas</p>
+        </div>
+
+        <div class="thumbnail">
+            <img src="https://th.bing.com/th/id/R.ca0aa78c1584615c4b6c5d77156e8929?rik=VdTKI5w9MY8Tvg&pid=ImgRaw&r=0"
+                alt="pobndezin">
+            <h3>Como resistir a uma gostosa</h3>
+            <p>Ponde - 10 mi visualizações - há 1 min</p>
+        </div>
+
+        <div class="thumbnail">
+            <img src="https://i.ytimg.com/vi/_MKNXojZBxM/maxresdefault.jpg" alt="veridico">
+            <h3>Momentos tensos do futebol</h3>
+            <p>Canal veridico - 1,2 mi visualizações - há 2 dias</p>
+        </div>
+
+
+    </div>
+    </div>
+</body>
+
+</html>
