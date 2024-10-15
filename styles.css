@@ -1,52 +1,53 @@
-/* Estilo do Header */
-header {
-    background-color: #202020; /* Cor de fundo do header */
+/*header {
     color: #fff;
-    padding: 10px 20px; /* Ajuste no padding */
+    padding: 10px 0;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Espaço entre os elementos */
-    position: fixed; /* Fixa o header no topo */
-    width: 100%; /* Largura total */
-    z-index: 1000; /* Mantém o header acima de outros elementos */
+    justify-content: center;
+}*/
+
+/*três riscos paralelos*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Menu Button */
+
 .menu-button {
     background: none;
     border: none;
-    color: #fff; /* Cor do texto */
+    color: black;
     font-size: 24px;
     cursor: pointer;
 }
 
-/* Campo de Busca */
 .search-bar {
     flex: 1;
     margin: 0 20px;
-    padding: 10px; /* Aumenta o padding para melhor usabilidade */
+    padding: 5px;
     border-radius: 20px;
     font-size: 16px;
-    border: 1px solid #ccc; /* Cor da borda */
-    background-color: #f9f9f9; /* Fundo do campo de busca */
+    border: 1px solid #000;
+    width: 275px;
 }
 
-/* Botão de Busca */
 .search-button {
-    background-color: #c0392b; /* Cor do botão de busca */
-    color: #fff;
+    background-color: #fff;
+    color: black;
     border: none;
     border-radius: 20px;
-    padding: 10px 15px;
+    padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
 }
 
-/* Botões Redondos */
-.round-button,
-.notification-button,
-.account-button {
-    background-color: #f9f9f9; /* Cor de fundo dos botões */
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.round-button {
+    background-color: #f2f2f2;
     color: black;
     border: none;
     border-radius: 50%;
@@ -55,23 +56,44 @@ header {
     cursor: pointer;
 }
 
-/* Logo */
-.logo {
+.notification-button {
+    background-color: #fff;
+    color: black;
     border: none;
-    width: 100px; /* Ajuste na largura do logo */
-    height: auto; /* Altura automática para manter a proporção */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }
 
-/* Estilo da Sidebar */
+.account-button {
+    background-color: #fff;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.logo {
+
+    border: none;
+    width: 80px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+
 .sidebar {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #fff;
-    color: #000;
-    width: 80px; /* Largura da sidebar */
+    background-color: #ffffff;
+    color: #000000;
+    width: 75px;
     padding: 20px 10px;
     position: fixed;
     left: 0;
-    top: 50px; /* Abaixo do header */
+    top: 50px;
     bottom: 0;
     box-sizing: border-box;
     display: flex;
@@ -79,57 +101,49 @@ header {
     align-items: center;
 }
 
-/* Ícones da Sidebar */
 .sidebar i {
-    font-size: 24px; /* Aumenta o tamanho do ícone */
+    font-size: 22px;
     color: #000;
 }
 
-/* Estilo das Links da Sidebar */
 .sidebar li {
-    margin-bottom: 15px; /* Aumenta o espaço entre os itens */
+    margin-bottom: 10px;
     text-align: center;
 }
 
 .sidebar a {
     text-decoration: none;
     color: #000;
-    font-size: 14px; /* Tamanho da fonte dos links */
 }
 
-/* Estilo do Container de Thumbnails */
 .thumbnail-container {
-    margin-left: 90px; /* Espaço da sidebar */
+    margin-left: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-top: 20px; /* Espaço acima do container */
 }
 
-/* Estilo dos Thumbnails */
 .thumbnail {
     text-align: center;
     margin: 10px;
     border-radius: 5px;
     width: calc(25% - 20px);
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    transition: transform 0.2s; /* Transição suave ao passar o mouse */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.thumbnail:hover {
-    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
-}
 
 .thumbnail h3,
 .thumbnail p {
-    margin: 5px 0; /* Margem para os textos */
+    margin: 0;
 }
 
-/* Imagens dos Thumbnails */
 .thumbnail img {
     margin: 0;
-    width: 100%; /* Largura total do container */
-    height: auto; /* Altura automática para manter a proporção */
-    border-radius: 10px; /* Bordas arredondadas */
+    width: 300px;
+    height: 220px;
+    padding: 0;
+    border-radius: 10px;
 }
